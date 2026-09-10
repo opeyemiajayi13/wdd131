@@ -7,11 +7,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    color: #222;
+    color: #172b4d;
     line-height: 1.5;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+   ========================= */
 
 header {
     max-width: 1100px;
@@ -23,8 +25,8 @@ header {
     background-color: #24577a;
     color: white;
     text-align: center;
-    font-size: 1.2rem;
-    padding: 12px;
+    font-size: 1.5rem;
+    padding: 18px;
 }
 
 nav {
@@ -37,8 +39,8 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 12px 20px;
+    font-size: 1rem;
 }
 
 nav a:hover {
@@ -46,108 +48,177 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* MAIN */
+/* =========================
+   MAIN
+   ========================= */
 
 main {
     max-width: 1100px;
-    margin: 20px auto;
+    margin: 25px auto;
     padding: 0 15px;
 }
 
 h1 {
     text-align: center;
-    color: #333;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+    color: #222;
+    font-size: 2rem;
+    margin-bottom: 25px;
 }
 
-/* TWO CARDS */
+/* =========================
+   TWO CARDS
+   ========================= */
 
 .cards {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    gap: 15px;
 }
 
-/* CARD */
+/* =========================
+   CARD
+   ========================= */
 
 .card {
     background-color: white;
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 7px;
     overflow: hidden;
 }
 
-/* CARD HEADING */
+/* CARD HEADINGS */
 
 .card h2 {
     background-color: #24577a;
     color: white;
     text-align: center;
-    padding: 8px;
-    font-size: 1rem;
+    padding: 10px;
+    font-size: 1.1rem;
 }
 
-/* ABOUT ME */
+/* =========================
+   ABOUT ME
+   ========================= */
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 100px;
-    gap: 15px;
-    padding: 15px;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    padding: 20px;
     align-items: start;
 }
 
-.about-text {
-    font-size: 0.9rem;
-}
+/* PASSPORT PHOTO */
 
-.about-content .profile-image {
+.profile-image {
     width: 100px;
     height: 120px;
-    max-width: 100px;
-    max-height: 120px;
     object-fit: cover;
     display: block;
 }
 
-.card h3 {
-    text-align: center;
-    border-bottom: 1px solid #aaa;
-    margin: 15px 0 10px;
-    padding-bottom: 5px;
+/* ABOUT ME TEXT */
+
+.about-text {
     font-size: 1rem;
+    color: #172b4d;
 }
 
-/* WEB RESOURCES */
+/* =========================
+   DIVIDING LINE
+   ========================= */
+
+.section-divider {
+    border-top: 2px solid #ccc;
+    margin: 0 20px 15px;
+}
+
+/* =========================
+   NIGERIA SECTION
+   ========================= */
+
+.country-info {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    padding: 0 20px 25px;
+    align-items: start;
+}
+
+/* NIGERIA FLAG */
+
+.flag-image {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    display: block;
+    margin-top: 5px;
+}
+
+/* ABUJA HEADING */
+
+.country-info h3 {
+    text-align: center;
+    color: #222;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #aaa;
+}
+
+/* NIGERIA TEXT */
+
+.country-info p {
+    font-size: 1rem;
+    color: #172b4d;
+}
+
+/* =========================
+   WEB DEV RESOURCES
+   ========================= */
 
 .resources-content {
     padding: 20px;
 }
 
+.resources-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.resources-content h3 {
+    color: #222;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
 .resources-content ul {
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 .resources-content li {
-    margin-bottom: 7px;
-    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-size: 1rem;
 }
 
 .resources-content a {
-    color: #3515a8;
+    color: #0645ad;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
 
 footer {
     max-width: 1100px;
-    margin: 25px auto 0;
+    margin: 30px auto 0;
     background-color: #24577a;
     color: white;
     text-align: center;
-    padding: 15px;
-    font-size: 0.9rem;
+    padding: 18px;
+    font-size: 1rem;
 }
 
 #lastModified {
@@ -155,7 +226,9 @@ footer {
     margin-top: 5px;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+   ========================= */
 
 @media screen and (max-width: 700px) {
 
@@ -174,194 +247,22 @@ footer {
     }
 
     .about-content {
-        grid-template-columns: 1fr 100px;
+        grid-template-columns: 100px 1fr;
+        gap: 15px;
     }
 
-    .about-content .profile-image {
-        width: 100px;
-        height: 120px;
-    }
-}* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: #222;
-    line-height: 1.5;
-}
-
-/* HEADER */
-
-header {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-#course-title {
-    display: block;
-    background-color: #24577a;
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 12px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #333;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 0.9rem;
-}
-
-nav a:hover {
-    color: #ffd166;
-    text-decoration: underline;
-}
-
-/* MAIN */
-
-main {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 0 15px;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-/* TWO CARDS */
-
-.cards {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 10px;
-}
-
-/* CARD */
-
-.card {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    overflow: hidden;
-}
-
-/* CARD HEADING */
-
-.card h2 {
-    background-color: #24577a;
-    color: white;
-    text-align: center;
-    padding: 8px;
-    font-size: 1rem;
-}
-
-/* ABOUT ME */
-
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 100px;
-    gap: 15px;
-    padding: 15px;
-    align-items: start;
-}
-
-.about-text {
-    font-size: 0.9rem;
-}
-
-.about-content .profile-image {
-    width: 100px;
-    height: 120px;
-    max-width: 100px;
-    max-height: 120px;
-    object-fit: cover;
-    display: block;
-}
-
-.card h3 {
-    text-align: center;
-    border-bottom: 1px solid #aaa;
-    margin: 15px 0 10px;
-    padding-bottom: 5px;
-    font-size: 1rem;
-}
-
-/* WEB RESOURCES */
-
-.resources-content {
-    padding: 20px;
-}
-
-.resources-content ul {
-    padding-left: 20px;
-}
-
-.resources-content li {
-    margin-bottom: 7px;
-    font-size: 0.9rem;
-}
-
-.resources-content a {
-    color: #3515a8;
-}
-
-/* FOOTER */
-
-footer {
-    max-width: 1100px;
-    margin: 25px auto 0;
-    background-color: #24577a;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 0.9rem;
-}
-
-#lastModified {
-    color: #ffd166;
-    margin-top: 5px;
-}
-
-/* MOBILE */
-
-@media screen and (max-width: 700px) {
-
-    nav {
-        flex-direction: column;
+    .profile-image {
+        width: 90px;
+        height: 110px;
     }
 
-    nav a {
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid #555;
+    .country-info {
+        grid-template-columns: 90px 1fr;
+        gap: 15px;
     }
 
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr 100px;
-    }
-
-    .about-content about-image {
-        width: 100px;
-        height: 120px;
+    .flag-image {
+        width: 70px;
+        height: 45px;
     }
 }
