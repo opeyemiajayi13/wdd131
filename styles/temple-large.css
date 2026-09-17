@@ -1,0 +1,36 @@
+/* Larger Screen Styles */
+
+@media screen and (min-width: 700px) {
+
+    /* Hide the hamburger button on larger screens */
+    #menu-button {
+        display: none;
+    }
+
+    /* Show navigation links */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        width: auto;
+        padding: 1rem 1.5rem;
+    }
+
+    /* Two-column temple layout */
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    /* Three-column temple layout */
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
